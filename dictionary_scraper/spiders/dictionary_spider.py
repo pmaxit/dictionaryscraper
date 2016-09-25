@@ -76,7 +76,7 @@ class DictionarySpider(scrapy.Spider):
         item = response.meta['item']
         deflist = response.xpath("//*[@class='def-list']/section")
         meanings=[]
-        for section in deflist:
+        for section in deflist[:-1]:
             meaning={}
             meaning['scope'] = self.extract(section.xpath("./header/span//text()"))
             meaning['definition'] = []
