@@ -4,4 +4,6 @@ This project scrapes various sources of dictionary and extracts useful informati
 
 ### How to run
 >   Install scrapy
+
+
 >   run: scrapy crawl dictionary
