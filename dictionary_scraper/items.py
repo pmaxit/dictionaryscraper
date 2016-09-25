@@ -10,5 +10,11 @@ import scrapy
 
 class DictionaryScraperItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    word 		= scrapy.Field()
+    sentences 	= scrapy.Field()
+    mnemonics 	= scrapy.Field()
+    meanings 	= scrapy.Field()
+    origin		= scrapy.Field()
+    reference   = scrapy.Field()
+
+    
